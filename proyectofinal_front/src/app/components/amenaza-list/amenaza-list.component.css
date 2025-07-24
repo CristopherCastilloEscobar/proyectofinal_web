@@ -1,0 +1,261 @@
+/* amenaza-list.component.css - ACTUALIZADO SIN FONDO MORADO */
+.page-container {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.amenaza-container {
+  padding: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 20px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.content-header h2 {
+  color: #333;
+  margin: 0;
+  font-size: 24px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-primary {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s;
+  box-shadow: 0 2px 10px rgba(0, 123, 255, 0.3);
+}
+
+.btn-primary:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4);
+}
+
+.filters {
+  margin-bottom: 25px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.filters label {
+  font-weight: 600;
+  color: #333;
+}
+
+.select-filter {
+  margin-left: 15px;
+  padding: 8px 15px;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  background: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.select-filter:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.amenazas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 25px;
+}
+
+.amenaza-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  transition: all 0.3s;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.amenaza-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+}
+
+.amenaza-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #f8f9fa;
+}
+
+.amenaza-header h3 {
+  margin: 0;
+  color: #333;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.nivel-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.nivel-critico { 
+  background: #dc3545; 
+  color: white; 
+}
+
+.nivel-alto { 
+  background: #fd7e14; 
+  color: white; 
+}
+
+.nivel-medio { 
+  background: #ffc107; 
+  color: black; 
+}
+
+.nivel-bajo { 
+  background: #28a745; 
+  color: white; 
+}
+
+.amenaza-body {
+  margin-bottom: 20px;
+}
+
+.amenaza-body p {
+  margin: 8px 0;
+  color: #333;
+}
+
+.amenaza-body strong {
+  color: #495057;
+}
+
+.descripcion {
+  background: #f8f9fa;
+  padding: 12px;
+  border-radius: 8px;
+  margin: 8px 0;
+  color: #666;
+  font-style: italic;
+  border-left: 4px solid #007bff;
+}
+
+.amenaza-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding-top: 15px;
+  border-top: 1px solid #f8f9fa;
+}
+
+.btn-view, .btn-edit, .btn-delete {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.btn-view { 
+  background: #17a2b8; 
+  color: white; 
+}
+
+.btn-view:hover { 
+  background: #117a8b; 
+  transform: translateY(-1px);
+}
+
+.btn-edit { 
+  background: #ffc107; 
+  color: black; 
+}
+
+.btn-edit:hover { 
+  background: #e0a800; 
+  transform: translateY(-1px);
+}
+
+.btn-delete { 
+  background: #dc3545; 
+  color: white; 
+}
+
+.btn-delete:hover { 
+  background: #bd2130; 
+  transform: translateY(-1px);
+}
+
+.loading, .error, .no-data {
+  text-align: center;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  margin: 20px 0;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+.error {
+  color: #dc3545;
+  background: rgba(248, 215, 218, 0.95);
+  border: 1px solid #f5c6cb;
+}
+
+.no-data h3 {
+  color: #666;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.no-data p {
+  color: #888;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .amenaza-container {
+    padding: 20px;
+  }
+  
+  .content-header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  .amenazas-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .amenaza-actions {
+    justify-content: center;
+  }
+}
